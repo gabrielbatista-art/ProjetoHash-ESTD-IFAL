@@ -22,6 +22,9 @@ class Pessoas():
             self.senha = randint(100000, 999999)
         else:
             self.senha = senha
+    
+    def __str__(self):
+        return self.nome
 
     def gerarCpf(self):
         randNum = randint(100000000, 999999999)

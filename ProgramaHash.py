@@ -7,7 +7,7 @@ tamanhoLista = int(input("Digite o tamanho da lista: "))
 buscaHash = HashPessoas(tamanhoLista)
 print("Aguarde enquanto a lista é populada...")
 start = timeit.default_timer()
-listaPessoas = [Pessoas() for c in range(tamanhoLista - 3)]
+listaPessoas = [Pessoas() for c in range(tamanhoLista - 1)]
 for pessoa in listaPessoas:
     buscaHash.adicionarLista(pessoa)
 print(f"Lista populada. Tempo de exeução para adicionar {tamanhoLista} pessoas: {timeit.default_timer() - start :.2f}s")

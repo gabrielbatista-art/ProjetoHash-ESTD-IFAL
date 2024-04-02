@@ -7,10 +7,13 @@ class BuscaBinaria:
     
     def add(self,pessoa):
         self.lista.append(pessoa)
+        # listaOrdenada = sorted(self.lista, key=lambda pessoa: pessoa.cpf)
+        # self.lista = listaOrdenada
+
+    def busca_bi(self,cpf):
         listaOrdenada = sorted(self.lista, key=lambda pessoa: pessoa.cpf)
         self.lista = listaOrdenada
 
-    def busca_bi(self,cpf):
         lista_cpf = self.lista
         primeiro = 0
         ultimo = len(lista_cpf) - 1
